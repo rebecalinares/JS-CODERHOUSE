@@ -8,15 +8,6 @@ else{
 } */
 
 
-
- for(let mesa = 1; mesa <=20; mesa++){
-    let nombre = prompt("Ingrese su nombre para asignarle una mesa en el restaurant por favor");
-    let mensaje = `Mesa #${mesa} Nombre: ${nombre}`;
-    alert(mensaje);
-}
-alert("No tenemos más mesas para asignarle, vuelva mañana, muchas gracias!")
- 
-
 /* let entrada = prompt("Ingrese un nombre por favor") .toUpperCase;
 while(entrada !="NO"){
     switch(entrada){
@@ -34,3 +25,11 @@ while(entrada !="NO"){
 }
 
 alert("Muchas gracias!") */
+
+
+for(let mesa = 1; mesa <=20; mesa++){
+    let nombre = prompt("Ingrese su nombre para asignarle una mesa en el restaurant por favor");
+    let mensaje = `Mesa #${mesa} Nombre: ${nombre}`;
+    alert(mensaje);
+}
+alert("No tenemos más mesas para asignarle, vuelva mañana, muchas gracias!")
