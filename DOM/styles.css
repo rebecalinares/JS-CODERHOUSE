@@ -1,0 +1,10 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: pink;
+    color: rgb(240, 39, 190);
+}
+.h1{
+    text-align: center;
+    font-size: 80px;
+    color: white;
+}
