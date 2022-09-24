@@ -5,21 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <title>Formulario de Registro</title>
+    <title>Formulario de Registro de Pacientes</title>
 </head>
 <body>
     <h3>Ingrese los datos del paciente para agregar:</h3>
     <div id="containerPrincipal">
         <div>
             <form id="formulario">
-                <label> Nombre:</label>
-                <input class="iText" type="text" name=nombre" id="iNombre">
-
-                <label> Email:</label>
-                <input class="iText" type="email" name="email" id="iEmail">
-
-                <label> Password:</label>
-                <input class="iText" type="password" name="email" id="iPasdword">
+                <div class="formulario">
+                    <label> Nombre:</label>
+                    <input class="iText" placeholder="Ingrese su nombre" type="text" name="nombre" id="iNombre">
+                    <span class="input-border"></span>
+                </div>
+                <div class="formulario">
+                    <label> Email:</label>
+                    <input class="iText" placeholder="Ingrese su email" type="email" name="email" id="iEmail">
+                    <span class="input-border"></span>
+                </div>
+                <div class="formulario">
+                    <label> Password:</label>
+                    <input class="iText" placeholder="Ingrese su password" type="password" name="password" id="iPassword">
+                    <span class="input-border"></span>
+                </div>
 
                 <div id="botones">
                     <input type="submit" id="btnSubmit" id="" value="Confirmar">

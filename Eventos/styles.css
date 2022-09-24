@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: darkgray;
 }
 h3{
     text-align: center;
@@ -15,34 +14,53 @@ body{
 #formulario{
     display: flex;
     flex-direction: column;
-    width: 250px;
-    height: 200px;
+    width: 315px;
+    height: 420px;
     margin: 5px;
     border-radius: 30px;
     border: 1px solid gray;
     color: white;
-    background-color: #da7a6d;
+    background-color: #e8e8e8;
     padding: 20px;
     justify-content: center;
     margin-top: 50px;
 }
 
-#formulario label{
-    background-color: #da7a6d;
+
+label{
+    color: black;
+    padding-bottom: 10px;
 }
-
-    .iText{
-        background-color: whitesmoke;
-    }
-
 #botones{
-    background-color: #da7a6d;
+    background-color: #e8e8e8;
 }
 
 #btnSubmit, #btnMostrar{
-    margin-top: 25px;
-    width: 90px;
-    height: 30px;
+    width: 231px;
+    height: 50px;
+    position: relative;
+    display: inline-block;
+    margin: 12px;
+    padding: 12px 0px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #725AC1;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #725AC1;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #725ac1;
+}
+#btnSubmit:hover, #btnMostrar:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #725AC1;
+}
+
+#btnSubmit:active, #btnMostrar:active{
+    transform: scale(0.9);
 }
 
 #containerPrincipal{
@@ -53,4 +71,49 @@ body{
 #displayTodos, #displayTodos p, #displayTodos strong, #displayTodos h3 {
     background-color: #486f99;
     margin: 5px;
+}
+
+.formulario {
+    --width-of-input: 200px;
+    --border-height: 1px;
+    --border-before-color: rgba(221, 221, 221, 0.39);
+    --border-after-color: #5891ff;
+    --input-hovered-color: #4985e01f;
+    position: relative;
+    width: var(--width-of-input);
+    padding-top: 15px;
+}
+   /* styling of Input */
+.iText {
+    color: #fff;
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+    border-bottom: var(--border-height) solid var(--border-before-color);
+}
+   /* styling of animated border */
+.iText -border {
+    position: absolute;
+    background: var(--border-after-color);
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+   /* Hover on Input */
+input:hover {
+    background: var(--input-hovered-color);
+}
+
+input:focus {
+    outline: none;
+}
+   /* here is code of animated border */
+input:focus ~ .iText -border {
+    width: 100%;
 }

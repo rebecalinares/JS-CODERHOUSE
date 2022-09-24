@@ -12,7 +12,7 @@ let inputNombre = document.querySelector ("#iNombre");
 
 let nombreI = formulario.children[1].value;
 let emailI = formulario.children[3].value;
-let passwordI = formulario.children[5].value;
+let passwordI = formulario.children[5].value; 
 
 let contenedor = document.querySelector("#pacienteIngresado")
 let displayTodos = document.querySelector("#displayTodos");
